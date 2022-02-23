@@ -10,7 +10,6 @@ class FonColor : public Dark
 	Color color = Color(0, 0, 0, 0);
 	int opacity = 0;
 public:
-	FonColor() : Dark() { fon.setFillColor(color); }
 	FonColor(int op) : Dark()
 	{
 		opacity = op;
