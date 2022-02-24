@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <iostream>
+#include <windows.h>
 #include "Dark.h"
 using namespace std;
 using namespace sf;
@@ -16,4 +17,5 @@ public:
 		color = Color(0, 0, 0, opacity);
 		fon.setFillColor(color);
 	}
+	void zatemnenie(RenderWindow&);
 };

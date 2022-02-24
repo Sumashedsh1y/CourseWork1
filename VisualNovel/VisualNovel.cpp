@@ -1,24 +1,11 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <iostream>
-#include <windows.h>
 #include "BackDoor.h"
 #include "PlaySong.h"
 #include "FonColor.h"
 using namespace std;
 using namespace sf;
-void zatemnenie(RenderWindow& win)
-{
-    int t = 0;
-    while (t < 255)
-    {
-        FonColor fon(50);
-        win.draw(fon.getFon());
-        win.display();
-        Sleep(10);
-        t++;
-    }
-}
 int main()
 {
     setlocale(LC_ALL, "Russian");
@@ -41,6 +28,8 @@ int main()
     PlaySong q("Реквизиты\\Музыка\\SONG1.ogg");
     q.Play();
     PlaySong p("Реквизиты\\Музыка\\SONG2.ogg");
+
+    FonColor DARK(0);
 
     while (window.isOpen())
     {
@@ -71,7 +60,7 @@ int main()
                 if (event.type == Event::KeyPressed)
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         if (music == 1)
                         {
@@ -125,7 +114,7 @@ int main()
                 if (event.type == Event::KeyPressed)
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -153,7 +142,7 @@ int main()
                 if (event.type == Event::KeyPressed)
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -181,7 +170,7 @@ int main()
                 if (event.type == Event::KeyPressed)
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -209,7 +198,7 @@ int main()
                 if (event.type == Event::KeyPressed)
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -245,13 +234,13 @@ int main()
                     {
                         if (event.key.code == Keyboard::Enter)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene++;
                             continue;
                         }
                         if (event.key.code == Keyboard::Space)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene = 9;
                             continue;
                         }
@@ -282,7 +271,7 @@ int main()
                 {
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -320,13 +309,13 @@ int main()
                     {
                         if (event.key.code == Keyboard::Enter)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene = 15;
                             continue;
                         }
                         if (event.key.code == Keyboard::Space)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene = 25;
                             continue;
                         }
@@ -358,7 +347,7 @@ int main()
                 {
                     if (event.key.code == Keyboard::Enter)
                     {
-                        zatemnenie(window);
+                        DARK.zatemnenie(window);
                         scene++;
                         continue;
                     }
@@ -396,13 +385,13 @@ int main()
                     {
                         if (event.key.code == Keyboard::Enter)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene = 20;
                             continue;
                         }
                         if (event.key.code == Keyboard::Space)
                         {
-                            zatemnenie(window);
+                            DARK.zatemnenie(window);
                             scene = 25;
                             continue;
                         }

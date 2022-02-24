@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="BackDoor.cpp" />
     <ClCompile Include="Dark.cpp" />
+    <ClCompile Include="FonColor.cpp" />
     <ClCompile Include="PlaySong.cpp" />
     <ClCompile Include="VisualNovel.cpp" />
   </ItemGroup>
