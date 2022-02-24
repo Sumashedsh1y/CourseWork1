@@ -305,7 +305,7 @@ int main()
             txt.setPosition(10, 900);
             Text txt2;
             txt2.setFont(font);
-            txt2.setString(L"ENTER - Оставить все как есть и учится дальше\nSPACE - Рискнуть и попробовать все изменить");
+            txt2.setString(L"ENTER - Оставить все как есть\nSPACE - Рискнуть и попробовать все изменить");
             txt2.setCharacterSize(100);
             txt2.setOutlineThickness(4.0f);
             txt2.setPosition(10, 10);
@@ -381,7 +381,7 @@ int main()
             txt.setPosition(10, 10);
             Text txt2;
             txt2.setFont(font);
-            txt2.setString(L"ENTER - Оставить все как есть и учится дальше\nSPACE - Рискнуть и попробовать все изменить");
+            txt2.setString(L"ENTER - Оставить все как есть\nSPACE - Рискнуть и попробовать все изменить");
             txt2.setCharacterSize(100);
             txt2.setOutlineThickness(4.0f);
             txt2.setPosition(10, 600);
